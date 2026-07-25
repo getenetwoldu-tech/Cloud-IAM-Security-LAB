@@ -26,3 +26,12 @@ This project is engineered to enforce zero-trust identity baselines within an en
 * **Directory Operations:** Microsoft Entra ID (Azure AD) P2 Engine, AWS IAM Policy Engine.
 * **Identity Governance:** Just-In-Time (JIT) Elevation, Privileged Identity Management (PIM), Lifecycle Access Reviews, Attestation Workflows.
 * **Security Controls:** Conditional Access Policies, Time-Bound Role Hardening, Multi-Factor Authentication (MFA) Guardrails, Fail-Secure Configuration Architecture.
+
+
+---
+
+### Project 4: AWS Multi-Account IAM & Identity Center
+**Focus Area:** Cloud PAM, AWS Organizations, ABAC, and Cross-Account Governance.
+* Configured central identity delegation using **AWS IAM Identity Center**.
+* Enforced account-level security guardrails using custom **Service Control Policies (SCPs)**.
+* Implemented **Attribute-Based Access Control (ABAC)** for granular permission scoping across member environments.
