@@ -82,3 +82,15 @@ Verified schedule status, active versioning, assigned administrative scopes, and
 * **Enabled:** Yes
 * **Current Version:** 1
 * **Schedule Active:** Yes
+
+
+  ---
+
+## Part 3: Microsoft Graph & PowerShell Automation
+
+To automate administrative audits and operational reporting, a PowerShell script was developed using the Microsoft Graph API SDK to programmatically query active Lifecycle Workflows.
+
+### Automation Script Usage:
+```powershell
+# Authenticate and retrieve workflow execution states
+.\Get-EntraLifecycleWorkflows.ps1
