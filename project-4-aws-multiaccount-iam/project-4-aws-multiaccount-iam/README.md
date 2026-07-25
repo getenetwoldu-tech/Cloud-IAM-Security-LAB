@@ -24,9 +24,13 @@ Service Control Policies (SCPs) are applied at the Organizational Unit (OU) leve
 ---
 
 ## Part 2: IAM Identity Center Permission Sets & ABAC
-*(Permission Sets and Group Mappings coming next)*
 
----
+Attribute-Based Access Control (ABAC) uses dynamic user and resource tags to grant access permissions dynamically without requiring individual policy updates for every user or project group.
+
+### **Implemented Policy:** [`abac-department-access-policy.json`](./abac-department-access-policy.json)
+
+* **Global Read Access (`AllowReadAccessAllResources`):** Allows visibility across EC2 and S3 resources.
+* **Tag Matching Rule (`EnforceABACDepartmentTagMatching`):** Dynamically grants start/stop/read/write permissions **only** if the user's `CostCenter` session tag matches the target resource's `CostCenter` tag (`${aws:PrincipalTag/CostCenter} == ${aws:ResourceTag/CostCenter}`).
 
 ## Part 3: Cross-Account Role Delegation & Automation
 *(Automation scripts coming next)*
