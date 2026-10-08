@@ -6,6 +6,7 @@ Configured an enterprise-grade secure Amazon S3 storage bucket enforcing strict 
 ---
 
 ## Architecture & Security Controls Implemented
+
 * **Block Public Access:** Enabled all four public access blocks to ensure zero risk of accidental public data exposure.
 * **Bucket Versioning:** Enabled object versioning to protect against accidental object overwrites or deletions.
 * **Default Encryption:** Applied Server-Side Encryption with S3 Managed Keys (SSE-S3) for data at rest.
@@ -15,13 +16,13 @@ Configured an enterprise-grade secure Amazon S3 storage bucket enforcing strict 
 
 ## Step-by-Step Implementation Proof
 
-### 1. Secure Bucket Creation & Public Access Block
-We created a dedicated S3 bucket and ensured all public access settings were strictly locked down.
+* Created an Amazon S3 general-purpose storage bucket named `secure-audit-lab-devops-gw` in the `us-west-2` region, configuring it with object ownership set to ACLs disabled (Bucket Owner Enforced) for modern IAM-based access control.
 
-![S3 Bucket List View](images/s3-bucket-list.png)
+![Secure S3 Bucket Configuration](images/s3-buckect-list.png)
 
-### 2. Custom JSON Bucket Policy
-We applied a least-privilege policy forcing all traffic to communicate over secure HTTPS channels.
+* Successfully implemented and verified a custom JSON bucket policy that enforces secure HTTPS transport (`aws:SecureTransport: false`) while maintaining strict public access blocks.
+
+![Enforced TLS Bucket Policy](images/s3-bucket-policy.png)
 
 ```json
 {
