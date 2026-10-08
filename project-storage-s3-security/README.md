@@ -22,7 +22,7 @@ Configured an enterprise-grade secure Amazon S3 storage bucket enforcing strict 
 
 * Successfully implemented and verified a custom JSON bucket policy that enforces secure HTTPS transport (`aws:SecureTransport: false`) while maintaining strict public access blocks.
 
-![Enforced TLS Bucket Policy](images/s3-bucket-policy.png)
+![Enforced TLS Bucket Policy](images/s3-bucket-policy.png.png)
 
 ```json
 {
