@@ -1,15 +1,15 @@
-# 🛡️ Cloud IAM & Security Engineering Lab
+# Cloud IAM & Security Engineering Lab
 
 Hands-on enterprise security and Identity & Access Management (IAM) laboratories demonstrating least-privilege policy engineering, cross-cloud federation, and automated identity governance workflows across AWS and Microsoft Azure.
 
 ---
 
-## 🎯 Repository Overview
+## Repository Overview
 This repository serves as a portfolio of production-aligned security implementations. Each lab is structured to solve common enterprise identity challenges—ranging from cloud-native permission boundaries to automated lifecycle provisioning and multi-region network hardening.
 
 ---
 
-## 📂 Laboratory Architecture & Structure
+## Laboratory Architecture & Structure
 
 | Module | Focus Area | Key Technologies & Concepts |
 | :--- | :--- | :--- |
@@ -23,14 +23,14 @@ This repository serves as a portfolio of production-aligned security implementat
 
 ---
 
-## ⚙️ Core Engineering Competencies
+## Core Engineering Competencies
 * **Identity & Access Management:** RBAC/ABAC models, enterprise directory federation (SAML/SCIM), and least-privilege policy design.
 * **Governance & Automation:** Identity lifecycle management, access reviews, and script-driven auditing workflows using PowerShell and Python.
 * **Multi-Cloud Security:** Infrastructure hardening, logging configuration, and perimeter defense across AWS and Azure environments.
 
 ---
 
-## 🚀 Quick Navigation & Usage
+## Quick Navigation & Usage
 Each project folder contains its own configuration files, scripts, and a detailed local `README.md` outlining objectives, step-by-step implementation, and verification steps. 
 
 git clone https://github.com/getenewoldu-tech/Cloud-IAM-Security-LAB.git
