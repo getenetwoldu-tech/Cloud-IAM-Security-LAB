@@ -33,4 +33,4 @@ This repository serves as a portfolio of production-aligned security implementat
 ## Quick Navigation & Usage
 Each project folder contains its own configuration files, scripts, and a detailed local `README.md` outlining objectives, step-by-step implementation, and verification steps. 
 
-git clone https://github.com/getenewoldu-tech/Cloud-IAM-Security-LAB.git
+git clone https://github.com/getenetwoldu-tech/Cloud-IAM-Security-LAB.git
